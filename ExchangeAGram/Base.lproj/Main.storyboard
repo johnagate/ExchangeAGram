@@ -59,7 +59,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="cB8-MC-Ko8">
-                        <barButtonItem key="leftBarButtonItem" title="Profile" id="G0D-An-ik1"/>
+                        <barButtonItem key="leftBarButtonItem" title="Profile" id="G0D-An-ik1">
+                            <connections>
+                                <action selector="profileTapped:" destination="BYZ-38-t0r" id="ogQ-uh-CW4"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="MQb-6l-B8o">
                             <connections>
                                 <action selector="snapBarButtonItemTapped:" destination="BYZ-38-t0r" id="HwK-Zl-KeA"/>
@@ -87,10 +91,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VLT-sg-GVn">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VLT-sg-GVn">
                                 <rect key="frame" x="10" y="70" width="100" height="100"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ep8-Js-4BF">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ep8-Js-4BF">
                                 <rect key="frame" x="153" y="79" width="199" height="81"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -104,7 +108,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="FBLoginView" destination="dnp-fK-sYQ" id="woE-z8-skR"/>
+                        <outlet property="fbLoginView" destination="dnp-fK-sYQ" id="sBX-Z0-DCO"/>
                         <outlet property="nameLabel" destination="ep8-Js-4BF" id="GQB-Jq-Zc8"/>
                         <outlet property="profileImageView" destination="VLT-sg-GVn" id="Ixb-EY-Z58"/>
                     </connections>
